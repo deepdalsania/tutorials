@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/web-app_3_0.xsd">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>ValidationServlet</servlet-name>
+		<servlet-class>com.ValidationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ValidationServlet</servlet-name>
+		<url-pattern>/Servlet/ValidationServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletLifeCycle</servlet-name>
+		<servlet-class>com.ServletLifeCycle</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletLifeCycle</servlet-name>
+		<url-pattern>/Servlet/ServletLifeCycle</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GenericServlet</servlet-name>
+		<servlet-class>com.GenericServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GenericServlet</servlet-name>
+		<url-pattern>/Servlet/GenericServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpServletDemo</servlet-name>
+		<servlet-class>com.HttpServletDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpServletDemo</servlet-name>
+		<url-pattern>/Servlet/HttpServletDemo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletMethods</servlet-name>
+		<servlet-class>com.ServletMethods</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletMethods</servlet-name>
+		<url-pattern>/Servlet/ServletMethods</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<servlet-class>com.ServletConfigDemo</servlet-class>
+		<init-param>
+			<param-name>x</param-name>
+			<param-value>14</param-value>
+
+		</init-param>
+		<init-param>
+			<param-name>y</param-name>
+			<param-value>10</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<url-pattern>/Servlet/ServletConfigDemo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+
+		<servlet-name>ServletContextDemo</servlet-name>
+		<servlet-class>com.ServletContextDemo</servlet-class>
+
+	</servlet>
+	<context-param>
+		<param-name>a</param-name>
+		<param-value>10</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>b</param-name>
+		<param-value>4</param-value>
+	</context-param>
+	<servlet-mapping>
+		<servlet-name>ServletContextDemo</servlet-name>
+		<url-pattern>/Servlet/ServletContextDemo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletCollaborationDemo</servlet-name>
+		<servlet-class>com.ServletCollaborationDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletCollaborationDemo</servlet-name>
+		<url-pattern>/Servlet/ServletCollaborationDemo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletURLReWriting</servlet-name>
+		<servlet-class>com.ServletURLReWriting</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletURLReWriting</servlet-name>
+		<url-pattern>/Servlet/ServletURLReWriting</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ValidationURLRewriting</servlet-name>
+		<servlet-class>com.ValidationURLRewriting</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ValidationURLRewriting</servlet-name>
+		<url-pattern>/Servlet/ValidationURLRewriting</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletHiddenField</servlet-name>
+		<servlet-class>com.ServletHiddenField</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletHiddenField</servlet-name>
+		<url-pattern>/Servlet/ServletHiddenField</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ValidationHiddenField</servlet-name>
+		<servlet-class>com.ValidationHiddenField</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ValidationHiddenField</servlet-name>
+		<url-pattern>/Servlet/ValidationHiddenField</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletCookie</servlet-name>
+		<servlet-class>com.ServletCookie</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletCookie</servlet-name>
+		<url-pattern>/Servlet/ServletCookie</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ValidationServletCookie</servlet-name>
+		<servlet-class>com.ValidationServletCookie</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ValidationServletCookie</servlet-name>
+		<url-pattern>/Servlet/ValidationServletCookie</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ServletSession</servlet-name>
+		<servlet-class>com.ServletSession</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletSession</servlet-name>
+		<url-pattern>/Servlet/ServletSession</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ValidationSession</servlet-name>
+		<servlet-class>com.ValidationSession</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ValidationSession</servlet-name>
+		<url-pattern>/Servlet/ValidationSession</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>ServletFilterLifeCycle</filter-name>
+		<filter-class>com.ServletFilterLifeCycle</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>ServletFilterLifeCycle</filter-name>
+		<url-pattern>/Servlet/ServletFilterLifeCycle</url-pattern>
+	</filter-mapping>
+
+
+	<servlet>
+		<servlet-name>ManageServletFilter</servlet-name>
+		<servlet-class>com.ManageServletFilter</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ManageServletFilter</servlet-name>
+		<url-pattern>/Servlet/ManageServletFilter</url-pattern>
+	</servlet-mapping>
+
+
+	<filter>
+		<filter-name>ValidationServletFilter</filter-name>
+		<filter-class>com.ValidationServletFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>ValidationServletFilter</filter-name>
+		<url-pattern>/Servlet/ManageServletFilter</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>LoginSuccessfulServlet</servlet-name>
+		<servlet-class>org.LoginSuccessfulServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginSuccessfulServlet</servlet-name>
+		<url-pattern>/Servlet/LoginSuccessfulServlet</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>LoginServletFilter</filter-name>
+		<filter-class>org.LoginServletFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>LoginServletFilter</filter-name>
+		<url-pattern>/Servlet/LoginSuccessfulServlet</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>LogOutServlet</servlet-name>
+		<servlet-class>org.LogOutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogOutServlet</servlet-name>
+		<url-pattern>/Servlet/LogOutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>org.HomeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/Servlet/HomeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OracleThinDemo</servlet-name>
+		<servlet-class>org.OracleThinDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>OracleThinDemo</servlet-name>
+		<url-pattern>/Servlet/OracleThinDemo</url-pattern>
+	</servlet-mapping>
+</web-app>

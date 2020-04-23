@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-body>
+<vegetables>  
+    <vegetable>  
+      <name>onion</name>  
+      <price>40/kg</price>  
+    </vegetable>  
+ 	<vegetable>  
+      <name>Potato</name>  
+      <price>30/kg</price>  
+    </vegetable>  
+ 	<vegetable>  
+      <name>Tomato</name>  
+      <price>90/kg</price>  
+    </vegetable>  
+</vegetables>
+</xml-body>

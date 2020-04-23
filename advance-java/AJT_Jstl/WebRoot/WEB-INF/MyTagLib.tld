@@ -1,0 +1,10 @@
+<!-- use taglib file directly from web folder -->
+
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<tag>
+		<name>MyTag</name>
+		<tag-class>com.MyOwnTagDemo</tag-class>
+	</tag>
+</taglib>
