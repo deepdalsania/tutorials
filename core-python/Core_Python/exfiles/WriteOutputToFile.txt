@@ -1,0 +1,4 @@
+Enter 4 temperatures in celsius for converting in fahrenheit : 
+[50.0, -40.0, "That temperature doesn't make sense!", 212.0]
+Enter 4 temperatures in celsius for converting in fahrenheit : 
+[50.0, -4.0, "That temperature doesn't make sense!", "That temperature doesn't make sense!"]

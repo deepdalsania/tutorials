@@ -1,0 +1,2 @@
+<----This file is for file pointer example---->
+<----After Writing the pointer change their position---->

@@ -1,0 +1,2 @@
+<----This file is for manual EOF example---->
+<----We can do tha by using any loop---->

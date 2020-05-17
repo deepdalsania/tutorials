@@ -1,0 +1,1 @@
+''' socket methods (library networking and interprocess communication) '''

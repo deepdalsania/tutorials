@@ -1,0 +1,2 @@
+<----This file is for with statement user defined object example---->
+<----By usin with statement we don't have to close any resource
