@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Hello from Facelets
+        <br/>     
+            <div>
+        <h:form>
+        <h:outputLabel for="txt1">
+            <h:outputText value="enter id"/>
+                  <h:inputText id="txt1" value="#{fn.id}"/>
+<br/>
+            <h:outputText value="enter name"/>
+        </h:outputLabel>
+<h:inputText id="txt2" value="#{fn.name}"/>
+<br/>
+<h:outputLabel for="txt3">
+    <h:outputText value="enter email"/>
+</h:outputLabel>
+<h:inputText id="txt3" value="#{fn.email}"/>
+<br/>
+<h:commandButton id="btn" action="#{fn.add()}" value="Insert"/>
+           </h:form>
+               
+        </div>
+    
+    </h:body>
+</html>
+

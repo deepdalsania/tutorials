@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HibernetDemo"
+  id="myeclipse.1549777688173"
+  context-root="/HibernetDemo"
+  j2ee-spec="5.0"
+  archive="HibernetDemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
