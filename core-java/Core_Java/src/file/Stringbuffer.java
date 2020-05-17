@@ -12,6 +12,7 @@ public class Stringbuffer {
 		StringBuffer s2 = new StringBuffer("I Love JAVA");
 		StringBuffer s3 = new StringBuffer("      JAVA      ");
 		StringBuffer s4 = new StringBuffer("Welcome JAVA");
+		Stringbuffer s5 = new Stringbuffer();
 		
 		System.out.println("1)capacity : "+s1.capacity());
 		s1.ensureCapacity(32);

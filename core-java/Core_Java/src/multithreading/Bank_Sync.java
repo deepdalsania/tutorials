@@ -48,7 +48,7 @@ class User1 implements Runnable {
 
 }
 
-class User2 implements Runnable {
+ class User2 implements Runnable {
 
 	Bal b;
 	int d;
