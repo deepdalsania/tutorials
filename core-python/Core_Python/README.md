@@ -1,5 +1,5 @@
 # Core_Python
-This project is all about core python programs by which you can easily perform most of the practicals regarding core java.
+This project is all about core python programs by which you can easily perform most of the practicals regarding core python.
 - This project contains most of the topics regarding core python like loop , oops concepts , socket programming , multithrading , file , data structure , numpy , string , exception handling etc.
 
 # Contributing
