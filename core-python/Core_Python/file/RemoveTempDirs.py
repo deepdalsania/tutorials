@@ -1,11 +1,11 @@
 import os
 from pathlib import Path
 from shutil import rmtree
-
+# change your parent dir accordingly
 try:
-    directory = "tempdir"
+    directory = "TempDir"
     parent_dir = "E:/PythonWorkspace/Core_Python/"
-    td1, td2 = "tempa", "tempb"
+    td1, td2 = "TempA", "TempA"
     path = os.path.join(parent_dir, directory)
     temp_mul_dirs = os.path.join(path + os.sep + os.sep, td1 + os.sep + os.sep + td2)
     ''' This methods used to remove single file. all three methods used to delete symlink too'''

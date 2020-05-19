@@ -1,7 +1,8 @@
 import os
 
+# change your parent dir accordingly
 try:
-    dir_path, file_name1 = 'E:/PythonWorkspace/Core_Python/exfiles/', 'PythonLogo.jpg'
+    dir_path, file_name1 = 'E:/PythonWorkspace/Core_Python/ExFiles/', 'PythonLogo.jpg'
     ''' we can use rb then we don't have to use f1.seek(0) while copying and we can
         also use wb for copied file '''
     f1 = open(os.path.join(dir_path, file_name1), 'ab+')

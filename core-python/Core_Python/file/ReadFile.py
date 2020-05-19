@@ -1,7 +1,7 @@
 import os
-
+# change your parent dir accordingly
 try:
-    dir_path, file_name1 = 'E:/PythonWorkspace/Core_Python/exfiles/', 'WriteFileMode_w.txt'
+    dir_path, file_name1 = 'E:/PythonWorkspace/Core_Python/ExFiles/', 'WriteFileMode_w.txt'
     ''' IF we don't pass mode as r then it is default '''
     f1 = open(os.path.join(dir_path, file_name1), 'r')
     ''' It will read 4 characters '''

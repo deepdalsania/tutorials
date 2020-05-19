@@ -1,6 +1,6 @@
 from os import path
 from contextlib import contextmanager
-
+# change your parent dir accordingly
 ''' sometimes you are writing a class and you don't want or need to inherit from 
     another class. In this case, you fill in object, which is referring to a very 
     basic, generic class that makes plain old "object'''
@@ -17,7 +17,7 @@ class ContentWriter(object):
         finally:
             file.close()
 
-parent_dir,fn1 = "E:/PythonWorkspace/Core_Python/exfiles/","WithStmtContextMngr.txt"
+parent_dir,fn1 = "E:/PythonWorkspace/Core_Python/ExFiles/","WithStmtContextMngr.txt"
 cw = ContentWriter(path.join(parent_dir,fn1))
 with cw.open_file() as cm_file:
     cm_file.writelines(["<----This file is for with statement using contextmanager decorator example---->","\n<----By usin with statement we don't have to close any resource"])

@@ -33,5 +33,5 @@ print(a)'''
 print(res)'''
 
 ''' The raw_input([prompt]) function reads one line from standard input and returns 
-    it as a string (removing the trailing newline). but this function availabe in
+    it as a string (removing the trailing newline). but this function available in
     Python 2.x now it's renamed as input in python 3.x'''

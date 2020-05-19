@@ -1,5 +1,7 @@
 import os
-parent_dir = "E:/PythonWorkspace/Core_Python/exfiles/"
+
+# change your parent dir accordingly
+parent_dir = "E:/PythonWorkspace/Core_Python/ExFiles/"
 
 with open(os.path.join(parent_dir,"ByteReadAndWrite.txt"),'wb+') as f:
     f.writelines([b'<----This file is for file pointer example---->',b'\n<----After Writing the pointer change their position---->'])

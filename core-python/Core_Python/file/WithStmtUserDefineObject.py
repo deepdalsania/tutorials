@@ -1,5 +1,6 @@
 import os
 
+# change your parent dir accordingly
 class ContentWriter:
 
     def __init__(self,f_name):
@@ -23,7 +24,7 @@ class ContentWriter:
 ''' This interface of __enter__() and __exit__() methods which provides the support 
     of with statement in user defined objects is called Context Manager.'''
 
-parent_dir,fn1 = "E:/PythonWorkspace/Core_Python/exfiles/","WithStmtUDObject.txt"
+parent_dir,fn1 = "E:/PythonWorkspace/Core_Python/ExFiles/","WithStmtUDObject.txt"
 with ContentWriter(os.path.join(parent_dir,fn1)) as f:
     f.writelines(["<----This file is for with statement user defined object example---->","\n<----By usin with statement we don't have to close any resource"])
     f.seek(0,0)

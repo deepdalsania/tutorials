@@ -1,7 +1,8 @@
 import os
-
+import datetime
+# change your parent dir accordingly
 try:
-    directory = "dirfiles"
+    directory = "DirFiles"
     parent_dir = "E:/PythonWorkspace/Core_Python/"
     path = os.path.join(parent_dir,directory)
     '''  mode is set to '0o666' which allowed both read and write functionality for the 
@@ -30,6 +31,12 @@ try:
     print("Before Rename : ",os.listdir(path))
     os.rename(os.path.join(path+"/","OldFoo.txt"),os.path.join(path+"/","NewFoo.txt"))
     print("After Rename : ",os.listdir(path))
+    f_path = os.path.join(path+"/","NewFoo.txt")
+    print("File size in bytes : ",os.path.getsize(f_path))
+    # it return UNIX time stamps.it represent the number of seconds since January 1st 1970
+    print("Last modified Date (UNIX Timestamp) : ",os.path.getsize(f_path))
+    print("Last modified Date (Datetime Module) : ",datetime.datetime.fromtimestamp(os.path.getsize(f_path)))
+    print("Absolute path : ",os.path.abspath("NewFoo.txt"))
     f.close()
 except (IOError,FileNotFoundError,OSError,Exception) as e:
     print(e)

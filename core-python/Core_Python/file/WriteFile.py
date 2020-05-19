@@ -1,5 +1,5 @@
 import os
-
+# change your parent dir accordingly
 try:
     dir_path,file_name1 = 'E:/PythonWorkspace/Core_Python/exfiles/','WriteFileMode_w.txt'
     f1 = open(os.path.join(dir_path,file_name1),'w')
