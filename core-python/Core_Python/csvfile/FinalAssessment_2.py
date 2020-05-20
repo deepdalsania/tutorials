@@ -1,4 +1,8 @@
 import csv
+import os
+# change your parent dir accordingly
+parent_dir = "E:/160350116002/Workspaces/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExCsvFiles"
+
 def read_employees(csv_file_location):
     csv.register_dialect('empDialect', skipinitialspace=True, strict=True)
     employee_file = csv.DictReader(open(csv_file_location), dialect='empDialect')
@@ -21,6 +25,7 @@ def write_report(dictionary, report_file):
         for k in sorted(dictionary):
             f.write(str(k) + ':' + str(dictionary[k]) + '\n')
 
-employee_list = read_employees('/home/student-04-6e7f62a72992/data/employees.csv')
+employee_list = read_employees(os.path.join(parent_dir,'Employees.csv'))
 dictionary = process_data(employee_list)
-write_report(dictionary, '/home/student-04-6e7f62a72992/data/report.txt')
+write_report(dictionary, os.path.join(parent_dir,'Report.txt'))
+print("Report Generated Suuccesfully")
