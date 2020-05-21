@@ -1,7 +1,7 @@
 # REQURIED JAR FILES
-## You can download any version of this but I prefered that download latest stable version.<br/>
+#### You can download any version of this but I prefered that download latest stable version.<br/>
 - Apache Commons Logging API : [Download](https://commons.apache.org/logging/)<br/>
-## I am using **spring-framework-4.1.6.RELEASE-dist.zip** for this tutorial. You can use this or higher version than this.<br/>
+#### I am using spring-framework-4.1.6.RELEASE-dist.zip for this tutorial. You can use this or higher version than this.<br/>
 - Spring framework binaries : [Download](https://repo.spring.io/release/org/springframework/spring)<br/>
 
 # Contributing
