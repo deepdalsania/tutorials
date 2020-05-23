@@ -2,7 +2,7 @@ import os
 import datetime
 # change your parent dir accordingly
 try:
-    directory = "DirFiles"
+    directory = "ExDirFiles"
     parent_dir = "E:/PythonWorkspace/Core_Python/"
     path = os.path.join(parent_dir,directory)
     '''  mode is set to '0o666' which allowed both read and write functionality for the 
