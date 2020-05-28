@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- here we defined a bean template also we defined abstract = "true". 
+		When a definition is defined to be abstract like this, it is usable only 
+		as a pure template bean definition that will serve as a parent definition 
+		for child definitions. -->
+	<bean id="beanTemplate" abstract="true">
+		<property name="name" value="fooParent" />
+		<property name="technology" value="java" />
+		<property name="age" value="19" />
+	</bean>
+
+	<!-- here we override name and age and technology as it is -->
+	<bean id="childBean"
+		class="com.spring.bean.definheritance.ChildBean" parent="beanTemplate">
+		<property name="name" value="fooChild" />
+		<property name="age" value="20" />
+	</bean>
+
+	<!-- here we override name and technology and age as it is and introduce 
+		new property city -->
+	<bean id="nestedChildBean"
+		class="com.spring.bean.definheritance.NestedChildBean"
+		parent="beanTemplate">
+		<property name="name" value="fooNestedChild" />
+		<property name="technology" value="python" />
+		<property name="city" value="Ahmedabad"></property>
+	</bean>
+
+</beans>
