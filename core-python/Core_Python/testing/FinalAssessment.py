@@ -17,7 +17,7 @@ def find_email(argv):
   try:
     fullname = str(argv[1] + " " + argv[2])
     # Preprocess the data
-    email_dict = populate_dictionary("E:/160350116002/Workspaces/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExTestingFiles/user_emails.csv")
+    email_dict = populate_dictionary("E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExTestingFiles/user_emails.csv")
      # If email exists, print it
     if email_dict.get(fullname.lower()):
       return email_dict.get(fullname.lower())

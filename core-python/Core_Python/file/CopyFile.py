@@ -1,7 +1,7 @@
 import os
 # change your parent dir accordingly
 try:
-    dir_path, file_name1 = 'E:/PythonWorkspace/Core_Python/ExFiles/', 'CopyFile_1.txt'
+    dir_path, file_name1 = 'E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFiles/', 'CopyFile_1.txt'
     f1 = open(os.path.join(dir_path, file_name1), 'a+')
     ''' we can use this list comprehension str([i for i in range(1,11)]) for storing 10 string
         numbers but it will store array like this [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] but we

@@ -17,7 +17,7 @@ class ContentWriter(object):
         finally:
             file.close()
 
-parent_dir,fn1 = "E:/PythonWorkspace/Core_Python/ExFiles/","WithStmtContextMngr.txt"
+parent_dir,fn1 = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFiles/","WithStmtContextMngr.txt"
 cw = ContentWriter(path.join(parent_dir,fn1))
 with cw.open_file() as cm_file:
     cm_file.writelines(["<----This file is for with statement using contextmanager decorator example---->","\n<----By usin with statement we don't have to close any resource"])

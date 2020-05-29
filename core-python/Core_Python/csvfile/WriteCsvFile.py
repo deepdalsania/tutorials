@@ -1,7 +1,7 @@
 import csv
 import os
 
-parent_dir = "E:/160350116002/Workspaces/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExCsvFiles"
+parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExCsvFiles"
 
 hosts = [["workstation.local", "192.168.45.67"], ["webserver.cloud", "10.1.1.2"]]
 with open(os.path.join(parent_dir,"WriteCsvFile.csv"),'w') as csv_file:

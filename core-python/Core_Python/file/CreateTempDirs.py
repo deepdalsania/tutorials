@@ -2,7 +2,7 @@ import os
 # change your parent dir accordingly
 try:
     directory = "TempDir"
-    parent_dir = "E:/PythonWorkspace/Core_Python/"
+    parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/"
     path = os.path.join(parent_dir, directory)
     if not os.path.isdir(path):
         os.mkdir(path, mode=0o666)

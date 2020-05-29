@@ -1,7 +1,7 @@
 import os
 # change your parent dir accordingly
 try:
-    parent_dir = "E:/PythonWorkspace/Core_Python/ExFiles/"
+    parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFiles/"
     fptr = open(os.path.join(parent_dir,"FilePointer.txt"),'w+')
     print("Initial File Pointer : ",fptr.tell())
     fptr.writelines(["<----This file is for file pointer example---->","\n<----After Writing the pointer change their position---->"])

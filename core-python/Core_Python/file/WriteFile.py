@@ -1,7 +1,7 @@
 import os
 # change your parent dir accordingly
 try:
-    dir_path,file_name1 = 'E:/PythonWorkspace/Core_Python/exfiles/','WriteFileMode_w.txt'
+    dir_path,file_name1 = 'E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/exfiles/','WriteFileMode_w.txt'
     f1 = open(os.path.join(dir_path,file_name1),'w')
     f1.write("Today")
     f1.write(" is")

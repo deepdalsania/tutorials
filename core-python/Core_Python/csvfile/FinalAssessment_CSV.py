@@ -1,7 +1,7 @@
 import csv
 import os
 # change your parent dir accordingly
-parent_dir = "E:/160350116002/Workspaces/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExCsvFiles"
+parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExCsvFiles"
 
 def read_employees(csv_file_location):
     csv.register_dialect('empDialect', skipinitialspace=True, strict=True)

@@ -3,13 +3,13 @@ import datetime
 # change your parent dir accordingly
 try:
     directory = "ExDirFiles"
-    parent_dir = "E:/PythonWorkspace/Core_Python/"
+    parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/"
     path = os.path.join(parent_dir,directory)
     '''  mode is set to '0o666' which allowed both read and write functionality for the 
          newly created file. We can create directory with mode or with out mode'''
     ''' we can also use os.path.exists(path)'''
     if not os.path.isdir(path):
-        ''' IF we have to create nested dirs like E:/PythonWorkspace/Core_Python/a/b
+        ''' IF we have to create nested dirs like E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/a/b
             then we have to use makedirs'''
         os.mkdir(path,mode=0o666)
     f = open(os.path.join(path+"/","DirMethods.txt"),'a')
