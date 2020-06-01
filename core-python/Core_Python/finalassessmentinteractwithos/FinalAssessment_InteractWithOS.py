@@ -7,7 +7,7 @@ per_user = {}
 # change parent directory accordingly
 parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFinalAsInteractWithOs"
 pattern = r"ticky: (ERROR|INFO) ([\w\s.,'?]*) (\[#\d{4}\] )?(\([\w\.]*\))"
-with open(os.path.join(parent_dir, "Syslog.log")) as file:
+with open(os.path.join(parent_dir, "Syslog.txt")) as file:
     for line in file:
         result = re.search(pattern, line)
         g1, g2, g4 = result.group(1).strip(), result.group(2).strip(), result.group(4).strip()
