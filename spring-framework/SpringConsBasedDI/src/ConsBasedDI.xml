@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="threatNotifier"
+		class="com.spring.cons.di.ThreatNotifier">
+		<constructor-arg ref="collector" />
+		<!-- 
+		If we have argument as class in constructor then we will add one more cons arg
+		<constructor-arg ref="artifact" />
+		 -->
+	</bean>
+
+	<bean id="collector"
+		class="com.spring.cons.di.IocCollector" />
+	<!-- 
+	If we have argument as class in constructor then we will add one more bean 
+	<bean id="artifact"
+		class="com.spring.cons.di.Artifact" />
+	-->
+
+</beans>

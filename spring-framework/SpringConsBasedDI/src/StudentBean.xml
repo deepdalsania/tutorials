@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Here we have no ambiguity of type therefore we can use type attribute -->
+	<bean id="student" class="com.spring.cons.di.StudentData">
+		<constructor-arg type="float" value="8.9" />
+		<constructor-arg type="java.lang.String" value="Foo" />
+	</bean>
+
+	<!-- Here we have ambiguity (as we have two String Fields so which one refer 
+		which field) of type so we are using index attribute for more specifications -->
+	<bean id="stu" class="com.spring.cons.di.StudentData">
+		<constructor-arg index="0" value="8.2" />
+		<constructor-arg index="1" value="Bar" />
+		<constructor-arg index="2" value="Stanford" />
+	</bean>
+
+	<!-- Another example of dependecy injection -->
+
+	<bean id="st" class="com.spring.cons.di.StudentData">
+		<!-- constructor injection using the nested <ref/> element -->
+		<constructor-arg>
+			<ref bean="universityData" />
+		</constructor-arg>
+		<!-- constructor injection using the neater 'ref' attribute -->
+		<constructor-arg ref="studentResultData" />
+
+		<constructor-arg type="java.lang.String" value="Buz" />
+	</bean>
+
+	<bean id="universityData"
+		class="com.spring.cons.di.UniversityData" />
+	<bean id="studentResultData"
+		class="com.spring.cons.di.StudentResultData" />
+
+</beans>
