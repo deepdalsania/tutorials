@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- 1. factory-method: represents the factory method that will be invoked 
+		to inject the bean. 2. factory-bean: represents the reference of the bean 
+		by which factory method will be invoked. It is used if factory method is 
+		non-static. -->
+	<bean id="nsfmAnotherClass"
+		class="com.spring.factory.di.NonStaticFactoryAnotherClass" />
+	<bean id="nsfmAnotherInterface"
+		class="com.spring.factory.di.NonStaticFactoryAnotherClass"
+		factory-method="getNonStaticFactoryAnotherInterface"
+		factory-bean="nsfmAnotherClass" />
+
+</beans>
