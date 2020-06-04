@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="student" class="com.spring.setter.di.StudentData">
+		<!-- setter injection using the nested <ref/> element -->
+		<property name="university">
+			<ref bean="universityData" />
+		</property>
+		<!-- setter injection using the neater 'ref' attribute -->
+		<property name="result" ref="studentResultData" />
+
+		<property name="name" value="Foo" />
+	</bean>
+
+	<bean id="universityData"
+		class="com.spring.setter.di.UniversityData" />
+	<bean id="studentResultData"
+		class="com.spring.setter.di.StudentResultData" />
+
+</beans>
