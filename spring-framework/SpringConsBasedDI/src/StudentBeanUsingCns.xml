@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- c-namespace declaration -->
+	<!-- c:parametername -> parametername name must be equal to parameter name 
+		specified in constructor -->
+	<bean id="cstudent" class="com.spring.cons.di.StudentData"
+		c:name="Qux" c:data-ref="universityData"
+		c:resultData-ref="studentResultData" />
+
+	<bean id="universityData"
+		class="com.spring.cons.di.UniversityData" />
+	<bean id="studentResultData"
+		class="com.spring.cons.di.StudentResultData" />
+
+</beans>
