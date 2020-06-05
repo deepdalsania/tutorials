@@ -17,7 +17,7 @@ public class StudentData {
 		this.name = name;
 		this.university = university;
 	}
-	
+
 	public StudentData(String name, UniversityData data, StudentResultData resultData) {
 		this.name = name;
 		this.uniData = data;
@@ -33,10 +33,17 @@ public class StudentData {
 		System.out.println("<---- constructor argument using the index attribute ---->");
 		System.out.println("Name : " + name + "\nUniversity : " + university + "\nCGPA : " + cgpa);
 	}
-	
+
 	public void getStData() {
 		System.out.println("<---- constructor argument using nested ref, neater ref, and value attributes ---->");
-		System.out.println("Name : "+name);
+		System.out.println("Name : " + name);
+		uniData.getUniName();
+		result.getResult();
+	}
+
+	public void getcStudentData() {
+		System.out.println("<---- constructor argument using c-namespace ---->");
+		System.out.println("Name : " + name);
 		uniData.getUniName();
 		result.getResult();
 	}
