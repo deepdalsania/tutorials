@@ -2,7 +2,7 @@ package com.spring.setter.di;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MainConsDI {
+public class MainSetterDI {
 
 	public static void main(String[] args) {
 		try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("SetterBasedDI.xml")) {
