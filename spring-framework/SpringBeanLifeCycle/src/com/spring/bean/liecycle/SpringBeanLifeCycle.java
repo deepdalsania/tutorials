@@ -13,10 +13,10 @@ public class SpringBeanLifeCycle {
 	}
 
 	public void init() {
-		System.out.println("Bean is initializing throungh init method");
+		System.out.println("Bean is initializing through init method");
 	}
 
 	public void cleanup() {
-		System.out.println("Bean is destroyed now throght cleanup method");
+		System.out.println("Bean is destroyed now through cleanup method");
 	}
 }
