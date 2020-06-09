@@ -1,4 +1,4 @@
-package com.spring.bean.liecycle;
+package com.spring.bean.lifecycle;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.spring.bean.liecycle;
+package com.spring.bean.lifecycle;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;

@@ -10,8 +10,7 @@
 		with the same name, you don't need to declare init-method and destroy-method 
 		on each individual bean. Instead, the framework provides the flexibility 
 		to configure such situation using default-init-method and default-destroy-method 
-		attributes on the <beans> element
-    -->
+		attributes on the <beans> element -->
 	<bean id="something" class="something">
 		<!-- collaborators and configuration for this bean go here -->
 	</bean>
