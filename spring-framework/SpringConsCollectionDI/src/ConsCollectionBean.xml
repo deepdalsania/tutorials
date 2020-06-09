@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="consCollection"
+		class="com.spring.cons.collection.di.ConsCollectionDI">
+
+		<!-- constructor-arg for list -->
+		<constructor-arg>
+			<list>
+				<value>Java</value>
+				<value>Python</value>
+				<value>Ruby</value>
+				<value>Scala</value>
+			</list>
+		</constructor-arg>
+
+		<!-- constructor-arg for set -->
+		<constructor-arg>
+			<set>
+				<value>IP</value>
+				<value>Domain</value>
+				<value>URL</value>
+			</set>
+		</constructor-arg>
+
+		<!-- constructor-arg for map -->
+		<constructor-arg>
+			<map>
+				<entry key="IP" value="10.1.1.1" />
+				<entry key="Domain" value="github.com" />
+				<entry key="URL" value="https://github.com/deepdalsania" />
+			</map>
+		</constructor-arg>
+
+		<!-- constructor-arg for map -->
+		<constructor-arg>
+			<props>
+				<prop key="username">admin</prop>
+				<prop key="password">admin</prop>
+				<prop key="hostname">adminhost</prop>
+			</props>
+		</constructor-arg>
+	</bean>
+
+</beans>
