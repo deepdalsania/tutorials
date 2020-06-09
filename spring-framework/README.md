@@ -3,6 +3,9 @@
 - Apache Commons Logging API : [Download](https://commons.apache.org/logging/)<br/>
 #### I am using spring-framework-4.1.6.RELEASE-dist.zip for this tutorial. You can use this or higher version than this.<br/>
 - Spring framework binaries : [Download](https://repo.spring.io/release/org/springframework/spring)<br/>
+#### These jars are required for Java Based Configuration projects.<br/>
+- CGLib : [Download](https://mvnrepository.com/artifact//cglib/2.2cglib.2)<br/>
+- ASM : [Download](https://mvnrepository.com/artifact/asm/asm/3.1)
 
 # IMPORTANT NOTE
 - I am using `Java 8` for these projects so you must have `Java 8` or `Java 8+`.
