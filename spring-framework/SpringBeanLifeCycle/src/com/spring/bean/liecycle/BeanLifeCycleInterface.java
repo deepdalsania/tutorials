@@ -21,12 +21,12 @@ public class BeanLifeCycleInterface implements InitializingBean, DisposableBean 
 	 */
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("Bean is initializing throungh afterPropertiesSet method of InitializingBean interface");
+		System.out.println("Bean is initializing through afterPropertiesSet method of InitializingBean interface");
 	}
 
 	@Override
 	public void destroy() throws Exception {
-		System.out.println("Bean is destroyed now throght destroy method of DisposableBean interface");
+		System.out.println("Bean is destroyed now through destroy method of DisposableBean interface");
 	}
 
 }
