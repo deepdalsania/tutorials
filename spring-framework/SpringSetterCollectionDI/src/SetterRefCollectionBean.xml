@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="setterRefCollection"
+		class="com.spring.setter.collection.di.SetterRefCollectionDI">
+
+		<!-- properties for list -->
+		<property name="langList">
+			<list>
+				<ref bean="listRef1" />
+				<ref bean="listRef2" />
+				<!-- If you want to use both(reference bean and value) then check note 
+					in SetterRefCollectionDI first <value>Ruby</value> <value>Scala</value> -->
+			</list>
+		</property>
+
+		<!-- properties for set -->
+		<property name="keys">
+			<set>
+				<ref bean="setRef1" />
+				<ref bean="setRef2" />
+				<!-- If you want to use both(reference bean and value) then check note 
+					in SetterRefCollectionDI first <value>Domain</value> <value>URl</value> -->
+			</set>
+		</property>
+
+		<!-- properties for map -->
+		<property name="resultMap">
+			<map>
+				<!-- You can use key-ref and value-ref individually or both together -->
+				<entry key-ref="kMapRef1" value-ref="vMapRef1" />
+				<entry key-ref="kMapRef2" value-ref="vMapRef2" />
+				<!-- If you want to use both(reference bean and entry) then check note 
+					in SetterRefCollectionDI first <entry key="IP" value="10.1.1.1"/> -->
+			</map>
+		</property>
+	</bean>
+
+	<!-- Reference beans for list -->
+	<bean id="listRef1"
+		class="com.spring.setter.collection.di.ReferenceList">
+		<property name="name" value="Java" />
+	</bean>
+
+	<bean id="listRef2"
+		class="com.spring.setter.collection.di.ReferenceList">
+		<property name="name" value="Python" />
+	</bean>
+
+	<!-- Reference beans for set -->
+	<bean id="setRef1"
+		class="com.spring.setter.collection.di.ReferenceSet">
+		<property name="key" value="Domain" />
+	</bean>
+
+	<bean id="setRef2"
+		class="com.spring.setter.collection.di.ReferenceSet">
+		<property name="key" value="URL" />
+	</bean>
+
+	<!-- Reference beans of keys for map -->
+	<bean id="kMapRef1"
+		class="com.spring.setter.collection.di.ReferenceKeyMap">
+		<property name="key" value="Domain"></property>
+	</bean>
+
+	<bean id="kMapRef2"
+		class="com.spring.setter.collection.di.ReferenceKeyMap">
+		<property name="key" value="URL"></property>
+	</bean>
+
+	<!-- Reference beans of values for map -->
+	<bean id="vMapRef1"
+		class="com.spring.setter.collection.di.ReferenceValueMap">
+		<property name="value" value="github.com"></property>
+	</bean>
+
+	<bean id="vMapRef2"
+		class="com.spring.setter.collection.di.ReferenceValueMap">
+		<property name="value"
+			value="https://github.com/deepdalsania"></property>
+	</bean>
+
+</beans>			

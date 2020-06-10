@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="setterCollection"
+		class="com.spring.setter.collection.di.SetterCollectionDI">
+
+		<!-- properties for list -->
+		<property name="langList">
+			<list>
+				<value>Java</value>
+				<value>Python</value>
+				<value>Ruby</value>
+				<value>Scala</value>
+			</list>
+		</property>
+
+		<!-- properties for set -->
+		<property name="keys">
+			<set>
+				<value>IP</value>
+				<value>Domain</value>
+				<value>URL</value>
+			</set>
+		</property>
+
+		<!-- properties for map -->
+		<property name="resultMap">
+			<map>
+				<entry key="IP" value="10.1.1.1" />
+				<entry key="Domain" value="github.com" />
+				<entry key="URL" value="https://github.com/deepdalsania" />
+			</map>
+		</property>
+
+		<!-- properties for property -->
+		<property name="props">
+			<props>
+				<prop key="username">admin</prop>
+				<prop key="password">admin</prop>
+				<prop key="hostname">adminhost</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- If you need to pass an empty string as a value, then you can pass it 
+		as follows 
+		<bean id = "..." class = "exampleBean"> 
+			<property name = "email" value = ""/> 
+		</bean>
+	The preceding example is equivalent to the Java code: exampleBean.setEmail("")	
+	 -->
+	 <!-- If you need to pass a NULL value, then you can pass it as follows
+	    <bean id = "..." class = "exampleBean">
+   			<property name = "email"><null/></property>
+		</bean>
+	The preceding example is equivalent to the Java code: exampleBean.setEmail(null)
+	  -->
+	  
+</beans>
