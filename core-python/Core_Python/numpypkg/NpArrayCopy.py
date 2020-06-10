@@ -1,6 +1,7 @@
 from numpy import *
 
-# Aliasing (new array from existing array but we have only one array in memory because address is same)
+# Aliasing (new array from existing array but we have only one array in memory because
+# address is same)
 '''arr1 = array([1,2,3,4,5,6])
 arr2 = arr1
 print("old array : ",arr1)
