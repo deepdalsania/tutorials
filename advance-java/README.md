@@ -1,7 +1,7 @@
 # ADVANCE JAVA
 This project is all about advance java programs by which you can easily perform whole practicals regarding advance java. 
-- All other project are the topics of advance java and each one have all rograms regarding their subtopics.
-- AJT_Gtu_Programs project cotains most of the programs whic was asked in gtu university examination paper for BE IT or CE from Winter-2016 to Summer-2017.
+- All other project are the topics of advance java and each one have all programs regarding their subtopics.
+- AJT_Gtu_Programs project cotains most of the programs which was asked in gtu university examination paper for BE IT or CE from Winter-2016 to Summer-2017.
 - I am using `Java 8` for these projects so you must have `Java 8` or `Java 8+`.
 
 # Support
