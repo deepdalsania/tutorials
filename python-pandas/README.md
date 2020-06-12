@@ -1,0 +1,2 @@
+# Python_Pandas
+This project demonstarted the `pandas` library of python from scratch. I am using `python 3.7.2` for this project. If you don't have pandas then you can install as shown [here](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html).
