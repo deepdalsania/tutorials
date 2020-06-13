@@ -6,6 +6,15 @@
 #### These jars are required for Java Based Configuration projects.<br/>
 - CGLib : [Download](https://mvnrepository.com/artifact//cglib/2.2cglib.2)<br/>
 - ASM : [Download](https://mvnrepository.com/artifact/asm/asm/3.1)
+#### These jars are required for Spring AOP framework projects.<br/>
+- aspectjrt : [Download](https://mvnrepository.com/artifact/org.aspectj/aspectjrt)
+- aspectjweaver : [Download](https://mvnrepository.com/artifact/org.aspectj/aspectjweaver)
+- aopalliance : [Download](https://mvnrepository.com/artifact/aopalliance/aopalliance)
+#### These jars are required for Spring JDBC framework projects.<br\>
+- mysql-connector : [Downloa](https://mvnrepository.com/artifact/mysql/mysql-connector-java/5.1.38)
+- spring-jdbc : [Download](https://mvnrepository.com/artifact/org.springframework/spring-jdbc)
+- spring-transaction : [Download](https://mvnrepository.com/artifact/org.springframework/spring-tx)
+
 
 # IMPORTANT NOTE
 - I am using `Java 8` for these projects so you must have `Java 8` or `Java 8+`.
