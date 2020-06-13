@@ -7,7 +7,7 @@ import os
 
 # use commandline
 file_name = sys.argv[1]
-parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExDataAndProcessFiles"
+parent_dir = "E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/ExDataAndProcessFiles"
 if not os.path.exists(os.path.join(parent_dir,file_name)):
     with open(os.path.join(parent_dir,file_name),'w') as f:
         f.write("New file created\n")

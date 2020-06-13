@@ -20,7 +20,7 @@ def file_output(returned_errors):
         file.close()
 
 if __name__ == "__main__":
-  parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExDataAndProcessFiles"
+  parent_dir = "E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/ExDataAndProcessFiles"
   log_file = sys.argv[1]
   returned_errors = error_search(os.path.join(parent_dir,log_file))
   file_output(returned_errors)

@@ -1,7 +1,7 @@
 import re, sys, os
 
 # use commandline and my file name is LogSamples.log you can find in ExDataAndProcessFiles directory
-parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExDataAndProcessFiles"
+parent_dir = "E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/ExDataAndProcessFiles"
 logfile = sys.argv[1]
 usernames = {}
 
