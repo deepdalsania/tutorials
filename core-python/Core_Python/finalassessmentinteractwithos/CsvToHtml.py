@@ -2,7 +2,7 @@ import sys
 import csv
 import os
 
-parent_dir = "E:/160350116002/Workspaces/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFinalAsInteractWithOs"
+parent_dir = "E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFinalAsInteractWithOs"
 '''Instruction for run this program'''
 ''' give command line output like in windowns if your environment variable
     is set then  use python CsvToHtml.py ErrorMessage.csv <html-file-name>.html
