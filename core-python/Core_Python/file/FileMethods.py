@@ -4,7 +4,7 @@
         or creates a new one if no file exists with the same name. The file pointer 
         exists at the beginning of the file.'''
 # change your parent dir accordingly
-f = open("E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFiles/FileMethod.txt",'w')
+f = open("E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFiles/FileMethod.txt",'w')
 print("File Name : ",f.name)
 print("File Modes : ",f.mode)
 print("Return an integer number (file descriptor) of the file : ",f.fileno())

@@ -1,7 +1,7 @@
 import os
 # change your parent dir accordingly
 try:
-    dir_path, file_name1 = 'E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFiles/', 'WriteFileMode_w.txt'
+    dir_path, file_name1 = 'E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/ExFiles/', 'WriteFileMode_w.txt'
     ''' IF we don't pass mode as r then it is default '''
     f1 = open(os.path.join(dir_path, file_name1), 'r')
     ''' It will read 4 characters '''

@@ -4,7 +4,7 @@ from shutil import rmtree
 # change your parent dir accordingly
 try:
     directory = "TempDir"
-    parent_dir = "E:/GitHub/Git_Tutorials_Repo_Projects/core-python/Core_Python/"
+    parent_dir = "E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/"
     td1, td2 = "TempA", "TempA"
     path = os.path.join(parent_dir, directory)
     temp_mul_dirs = os.path.join(path + os.sep + os.sep, td1 + os.sep + os.sep + td2)
