@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- <context:annotation-config/> only looks for annotations on beans in 
+		the same application context in which it is defined. This means that, if 
+		you put <context:annotation-config/> in a WebApplicationContext for a DispatcherServlet, 
+		it only checks for @Autowired beans in your controllers, and not your services. -->
+	<context:annotation-config />
+
+	<!-- Definition for studentdata bean -->
+	<bean id="student1"
+		class="com.spring.annotation.qualifier.StudentData">
+		<property name="name" value="Foo" />
+		<property name="university" value="Stanford" />
+		<property name="cgpa" value="8.89" />
+	</bean>
+
+	<bean id="student2"
+		class="com.spring.annotation.qualifier.StudentData">
+		<property name="name" value="Bar" />
+		<property name="university" value="Stanford" />
+		<property name="cgpa" value="8.87" />
+	</bean>
+
+	<!-- Definition for studentbranchdata bean -->
+	<bean id="stuBranch"
+		class="com.spring.annotation.qualifier.StudentBranchData">
+		<constructor-arg value="Information Technology" />
+	</bean>
+
+</beans>   
