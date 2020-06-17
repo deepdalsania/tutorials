@@ -18,6 +18,7 @@
 
 # IMPORTANT NOTE
 - I am using `Java 8` for these projects so you must have `Java 8` or `Java 8+`.
+- Kindly use `spring-jdbc` and `spring-transaction` version same as your `spring` version or nearer version.
 
 # Contributing
 I welcome to all contributors who are willing to program and contribute to the project.Kindly fork this project for add your programs.
