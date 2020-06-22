@@ -1,5 +1,4 @@
-import csv
-import os
+import csv, os
 
 parent_dir = "E:/GitHub/1) Git_Tutorials_Repo_Projects/core-python/Core_Python/ExCsvFiles"
 
