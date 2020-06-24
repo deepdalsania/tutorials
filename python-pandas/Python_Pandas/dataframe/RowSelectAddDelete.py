@@ -12,7 +12,12 @@ print(df.loc['e'])
 print("Row selection by integer location : ")
 print(df.iloc[1])
 
-# pela append, concat, join, merge function for data frame and jetala function data frame
-# ma joya aetala same badha series mate and pachhi tutorials point ma row addition start and
-# pachhi pandas data structure vala document mathi indexing and slicing start
-print("Row Addition")
+print("Row Addition : ")
+df1 = pd.DataFrame(data=[[1, 2], [3, 4]], columns=list('AB'))
+df2 = pd.DataFrame(data=[[5, 6], [7, 8]], columns=list('AB'))
+df1 = df1.append(df2)
+print(df1)
+
+print("Row deletion : ")
+df1 = df1.drop(index=0)
+print(df1)
