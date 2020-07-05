@@ -5,7 +5,7 @@ This project is all about advance java programs by which you can easily perform 
 - I am using `Java 8` for these projects so you must have `Java 8` or `Java 8+`.
 
 # Support
-I inspired to learn **ADVANCE JAVA** from **Prof.Ashutosh A. Abhangi** which took Advance Java as a subject and teach everything with theory as well as
+I inspired to learn **ADVANCE JAVA** from **Prof.Ashutosh A. Abhangi** who took Advance Java as a subject and teach everything with theory as well as
 practical.
 
 # Contributing
