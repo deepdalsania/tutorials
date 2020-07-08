@@ -1,2 +1,2 @@
 # SpringEventHandling
-This project demonstrated that how you can handle event using java based configuration with `ApplicationListener`isnterface. I suggest that for this project use [Eclipse](https://www.eclipse.org/downloads/) or [STS](https://spring.io/tools) as a tool.
+This project demonstrated that how you can handle event using java based configuration with `ApplicationListener` interface. I suggest that for this project use [Eclipse](https://www.eclipse.org/downloads/) or [STS](https://spring.io/tools) as a tool.
