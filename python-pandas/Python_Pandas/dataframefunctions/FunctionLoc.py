@@ -80,7 +80,3 @@ print(df.loc[[('hyundai','kona')]])
 # Single tuple for the index with a single label for the column
 print("<---- Price of toyota fortuner (get column) ---->")
 print(df.loc[('toyota','fortuner'),'price'])
-#print("<---- Slice from index tuple to single label ---->")
-#print(df.loc[('skoda','superb'):'hyundai'])
-#print("<---- Slice from index tuple to index tuple ---->")
-#print(df.loc[('skoda','superb'):('hyundai','elantra')])
