@@ -1,0 +1,2 @@
+# SpringDeclarativeTransactionManagement
+This project demonstrated that how you can use Declarative Transaction Management using `JDBCTemplate` and xml based configuration. I am using MySQL database for this project and also, I also uploaded queries that are related to this project as Sqldbquries.sql. I suggest that for this project use [Eclipse](https://www.eclipse.org/downloads/) or [STS](https://spring.io/tools) as a tool.

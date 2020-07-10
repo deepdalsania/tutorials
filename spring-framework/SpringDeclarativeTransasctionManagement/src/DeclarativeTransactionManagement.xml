@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+   http://www.springframework.org/schema/tx
+   http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+   http://www.springframework.org/schema/aop
+   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<!-- Initialization for data source -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://IP:PORT/database_name" />
+		<property name="username" value="username" />
+		<property name="password" value="password" />
+	</bean>
+
+	<!-- Note : Why I enable proxy? A very nice explanation is given here. Have 
+		a look! https://stackoverflow.com/questions/50543787/exception-in-thread-main-java-lang-classcastexception-com-sun-proxy-proxy13 -->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+	<tx:advice id="txAdvice"
+		transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="insertStudent" />
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config>
+		<aop:pointcut
+			expression="execution(* com.spring.declarative.transaction.management.StudentDataJDBCTemplate.insertStudent(..))"
+			id="insertOperation" />
+		<aop:advisor advice-ref="txAdvice"
+			pointcut-ref="insertOperation" />
+	</aop:config>
+
+	<!-- Initialization for TransactionManager -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- Definition for studentJDBCTemplate bean -->
+	<bean id="studentJdbcTemplate"
+		class="com.spring.declarative.transaction.management.StudentDataJDBCTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+</beans>
