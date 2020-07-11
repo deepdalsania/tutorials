@@ -1,0 +1,2 @@
+# SpringAspectJAOP
+This project demonstrated that how you can implement `SpringAOP`. I suggest that for this project use [Eclipse](https://www.eclipse.org/downloads/) or [STS](https://spring.io/tools) as a tool.
