@@ -48,3 +48,4 @@ print(df.iloc[:,[False,True,False]])
 print("<---- With a callable function that expects the Series or DataFrame ---->")
 # df.iloc[index,label]
 print(df.iloc[:,lambda df:[1,2]])
+# after multiindex check documentation
