@@ -1,0 +1,15 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `studentdata`.`getSingleStudentData` $$
+CREATE PROCEDURE `studentdata`.`getSingleStudentData` (
+IN in_en_no INTEGER,
+OUT out_name VARCHAR(20),
+OUT out_university VARCHAR(30),
+OUT out_cgpa  DOUBLE)
+BEGIN
+   SELECT name, university, cgpa
+   INTO out_name, out_university, out_cgpa
+   FROM STUDENTINFO where en_no = in_en_no;
+END $$
+
+DELIMITER ;
