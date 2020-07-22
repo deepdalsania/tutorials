@@ -1,0 +1,2 @@
+# SpringProgrammaticTransactionManagement
+This project demonstrated that how you can use Programmatic Transaction Management using `JDBCTemplate` and xml based configuration. I am using MySQL database for this project. I uploaded [Queries](https://github.com/deepdalsania/tutorials/blob/master/spring-framework/SpringProgrammaticTransactionManagement/src/Sqldbqueries.sql) that are related to this project. I suggest that for this project use [Eclipse](https://www.eclipse.org/downloads/) or [STS](https://spring.io/tools) as a tool.
