@@ -1,4 +1,4 @@
-package jvm;
+package jvmpkg;
 
 public class ShutdownHookDemo {
 
