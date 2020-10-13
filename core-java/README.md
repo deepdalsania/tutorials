@@ -11,3 +11,6 @@ practical.
 # Contributing
 I welcomed to all contributors who are willing to program and contribute to the project.Kindly fork this project for add your programs.
 Also you can learn git from [here](https://www.youtube.com/watch?v=OdbBmvfThJY&list=PLsyeobzWxl7q2eaUkorLZExfd7qko9sZC&index=1) and [here](https://guides.github.com/activities/hello-world/)
+
+# REQUIRED JAR FILES
+javax-mail : [Download](https://mvnrepository.com/artifact/javax.mail/mail/1.4.7)
