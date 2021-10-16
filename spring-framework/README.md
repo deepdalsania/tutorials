@@ -10,8 +10,8 @@
 - aspectjrt : [Download](https://mvnrepository.com/artifact/org.aspectj/aspectjrt)
 - aspectjweaver : [Download](https://mvnrepository.com/artifact/org.aspectj/aspectjweaver)
 - aopalliance : [Download](https://mvnrepository.com/artifact/aopalliance/aopalliance)
-#### These jars are required for Spring JDBC framework projects.<br\>
-- mysql-connector : [Downloa](https://mvnrepository.com/artifact/mysql/mysql-connector-java/5.1.38)
+#### These jars are required for Spring JDBC framework projects.<br/>
+- mysql-connector : [Download](https://mvnrepository.com/artifact/mysql/mysql-connector-java/5.1.38)
 - spring-jdbc : [Download](https://mvnrepository.com/artifact/org.springframework/spring-jdbc)
 - spring-transaction : [Download](https://mvnrepository.com/artifact/org.springframework/spring-tx)
 
