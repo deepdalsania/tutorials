@@ -30,7 +30,7 @@ class MySQL_Demo
 		
 		 try {
 			 Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testcrud","root","deep123");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testcrud","root","abc123");
 		
 			 System.out.println("connected...");
 		 } catch (Exception e) {
