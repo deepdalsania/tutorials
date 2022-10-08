@@ -144,9 +144,9 @@ class OracleQurey {
 		CallableStatement callableStatement = conn.prepareCall("call insertdata(?,?,?,?)");
 
 		/*
-		 * callableStatement.setString(1, "jhanvi"); callableStatement.setString(2,
-		 * "ghediya"); callableStatement.setString(3, "jhazz");
-		 * callableStatement.setString(4, "j@123");
+		 * callableStatement.setString(1, "abc"); callableStatement.setString(2,
+		 * "ghediya"); callableStatement.setString(3, "abcd");
+		 * callableStatement.setString(4, "abc@123");
 		 */
 
 		Scanner s = new Scanner(System.in);
