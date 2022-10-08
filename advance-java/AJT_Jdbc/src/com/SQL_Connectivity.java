@@ -31,7 +31,7 @@ class OracleQurey {
 
 	void connectivity() throws ClassNotFoundException, SQLException {
 		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-		conn = DriverManager.getConnection("jdbc:odbc:sqldata", "system", "deepDD@410");
+		conn = DriverManager.getConnection("jdbc:odbc:sqldata", "system", "abc@123");
 //			("jdbc:oracle:thin:@DeepDalsaniaDD:1521:xe","uname","password")// problem
 		System.out.println("connected...");
 	}
