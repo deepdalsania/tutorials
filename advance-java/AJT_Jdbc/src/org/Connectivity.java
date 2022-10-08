@@ -93,7 +93,7 @@ class MyAccess {
 	void inserData() throws Exception {
 
 		statement = conn.createStatement();
-		statement.execute("insert into UserInfo values(4,'parimal','p@123')");
+		statement.execute("insert into UserInfo values(4,'abc','p@123')");
 		System.out.println("executed.");
 		statement.close();
 		conn.close();
@@ -129,7 +129,7 @@ class MyAccess {
 	 * public void updateData() throws SQLException { Scanner sc = new
 	 * Scanner(System.in); System.out.println("Enter Id : "); int id = sc.nextInt();
 	 * System.out.println("Enter Username : "); String name = sc.next(); String s =
-	 * "update UserInfo set USERNAME='drashti' where Id=4 "; ps.execute(s);
+	 * "update UserInfo set USERNAME='abc' where Id=4 "; ps.execute(s);
 	 * System.out.println("executed."); String s =
 	 * "update UserInfo set USERNAME=? where Id=? "; try{
 	 * 
