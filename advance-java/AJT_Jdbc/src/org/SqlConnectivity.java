@@ -11,7 +11,7 @@ public class SqlConnectivity {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		
 		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-		Connection connection = DriverManager.getConnection("jdbc:odbc:sqldata","system","deepDD@410");
+		Connection connection = DriverManager.getConnection("jdbc:odbc:sqldata","system","abc@123");
 		/*String q = "insert into studentdb values(?,?,?)";
 		PreparedStatement preparedStatement = connection.prepareStatement(q);
 		Scanner sc = new Scanner(System.in);
