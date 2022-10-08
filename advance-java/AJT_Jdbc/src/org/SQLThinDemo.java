@@ -35,7 +35,7 @@ class OracleThinQurey
 		
 		 try {
 			 Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@DeepDalsaniaDD:1521:xe","system","deepDD@410");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@DeepDalsaniaDD:1521:xe","system","abc123");
 		
 			 System.out.println("connected...");
 		 } catch (Exception e) {
