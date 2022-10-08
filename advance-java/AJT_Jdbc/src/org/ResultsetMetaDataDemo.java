@@ -10,7 +10,7 @@ public class ResultsetMetaDataDemo {
 	public static void main(String[] args) {
 		try {
 			 Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@DeepDalsaniaDD:1521:xe","system","deepDD@410");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@DeepDalsaniaDD:1521:xe","system","abc@123");
 			String s = "select * from userinfo";
 			Statement st = conn.createStatement();
 			st.execute(s);
