@@ -1,7 +1,7 @@
 // Converting a decimal number into binary in Java using while loop.
 // By Soham Gupta (http://github.com/gupta-soham/) (https://www.linkedin.com/in/soham-gupta-in/)
-public class decToBin {
-    public static void DecToBin(int n) {
+public class DecToBin {
+    public static void decToBin(int n) {
         int Num = n;
         int pow = 0;
         int biNum = 0;
@@ -15,6 +15,6 @@ public class decToBin {
     }    
 
     public static void main(String[] args) {
-        DecToBin(15);
+        decToBin(15);
     }
 }
